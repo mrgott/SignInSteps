@@ -21,6 +21,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         cv.dataSource = self
         cv.delegate = self
         cv.isPagingEnabled = true
+        asdasdasdas
         
         return cv
     }()
