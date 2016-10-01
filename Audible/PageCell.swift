@@ -20,9 +20,22 @@ class PageCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    let stepImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.backgroundColor = .green
+        
+        return imageView
+    }()
+    
     func setupCell(){
     
-        backgroundColor = .blue
+        backgroundColor = .green
+        addSubview(stepImageView)
+        stepImageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        stepImageView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        stepImageView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        stepImageView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         
     }
     
