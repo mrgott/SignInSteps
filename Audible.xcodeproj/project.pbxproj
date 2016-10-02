@@ -10,6 +10,7 @@
 		2606BA9E1D9DB21A00B30B1F /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2606BA9D1D9DB21A00B30B1F /* PageCell.swift */; };
 		264A32221DA1104F0045AADE /* PageCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A32211DA1104F0045AADE /* PageCellModel.swift */; };
 		264A32251DA124550045AADE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A32241DA124550045AADE /* ColorExtension.swift */; };
+		264A32271DA13A4F0045AADE /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A32261DA13A4F0045AADE /* LoginCell.swift */; };
 		266F60AE1D9589EC0099D9B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266F60AD1D9589EC0099D9B8 /* AppDelegate.swift */; };
 		266F60B01D9589EC0099D9B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266F60AF1D9589EC0099D9B8 /* ViewController.swift */; };
 		266F60B31D9589EC0099D9B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266F60B11D9589EC0099D9B8 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		2606BA9D1D9DB21A00B30B1F /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		264A32211DA1104F0045AADE /* PageCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCellModel.swift; sourceTree = "<group>"; };
 		264A32241DA124550045AADE /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		264A32261DA13A4F0045AADE /* LoginCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
 		266F60AA1D9589EC0099D9B8 /* Audible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		266F60AD1D9589EC0099D9B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		266F60AF1D9589EC0099D9B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				266F60AF1D9589EC0099D9B8 /* ViewController.swift */,
 				2606BA9D1D9DB21A00B30B1F /* PageCell.swift */,
+				264A32261DA13A4F0045AADE /* LoginCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				266F60AE1D9589EC0099D9B8 /* AppDelegate.swift in Sources */,
 				2606BA9E1D9DB21A00B30B1F /* PageCell.swift in Sources */,
 				264A32251DA124550045AADE /* ColorExtension.swift in Sources */,
+				264A32271DA13A4F0045AADE /* LoginCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
