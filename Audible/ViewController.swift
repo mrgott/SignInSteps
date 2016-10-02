@@ -26,6 +26,35 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return cv
     }()
     
+    let pageControl: UIPageControl = {
+        let pageControl = UIPageControl()
+        pageControl.pageIndicatorTintColor = .lightGray
+        pageControl.currentPageIndicatorTintColor = UIColor.rgb(red: 247, green: 154, blue: 27, alpha: 1)
+        pageControl.numberOfPages = 3
+        pageControl.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        return pageControl
+    }()
+    
+    let skipButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Skip", for: .normal)
+        button.setTitleColor(UIColor.rgb(red: 247, green: 154, blue: 27, alpha: 1), for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        return button
+    }()
+    
+    let nextButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Next", for: .normal)
+        button.setTitleColor(UIColor.rgb(red: 247, green: 154, blue: 27, alpha: 1), for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        return button
+    }()
+    
     let pages: [PageCellModel] = {
         let pageOne = PageCellModel(imageName: "page1", title: "Share a Great Listen", message: "This is a very awesome application where you can listen to the selected music")
         let pageTwo = PageCellModel(imageName: "page2", title: "Choose your music", message: "Tap the More menu next to any book. Choose \"Send this Book\"")
@@ -45,6 +74,24 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         collectionView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        
+        view.addSubview(pageControl)
+        pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10).isActive = true
+        pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        pageControl.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        
+        view.addSubview(skipButton)
+        skipButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 16).isActive = true
+        skipButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        skipButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        skipButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
+        view.addSubview(nextButton)
+        nextButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 16).isActive = true
+        nextButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        nextButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        nextButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
         
     }
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2606BA9E1D9DB21A00B30B1F /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2606BA9D1D9DB21A00B30B1F /* PageCell.swift */; };
 		264A32221DA1104F0045AADE /* PageCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A32211DA1104F0045AADE /* PageCellModel.swift */; };
+		264A32251DA124550045AADE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A32241DA124550045AADE /* ColorExtension.swift */; };
 		266F60AE1D9589EC0099D9B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266F60AD1D9589EC0099D9B8 /* AppDelegate.swift */; };
 		266F60B01D9589EC0099D9B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266F60AF1D9589EC0099D9B8 /* ViewController.swift */; };
 		266F60B31D9589EC0099D9B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266F60B11D9589EC0099D9B8 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		2606BA9D1D9DB21A00B30B1F /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		264A32211DA1104F0045AADE /* PageCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCellModel.swift; sourceTree = "<group>"; };
+		264A32241DA124550045AADE /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		266F60AA1D9589EC0099D9B8 /* Audible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		266F60AD1D9589EC0099D9B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		266F60AF1D9589EC0099D9B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		264A32231DA124370045AADE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				264A32241DA124550045AADE /* ColorExtension.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		266F60A11D9589EB0099D9B8 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,7 @@
 		266F60AC1D9589EC0099D9B8 /* Audible */ = {
 			isa = PBXGroup;
 			children = (
+				264A32231DA124370045AADE /* Helpers */,
 				266F60DD1D958A160099D9B8 /* Views */,
 				266F60DC1D958A0D0099D9B8 /* Controllers */,
 				266F60DB1D958A020099D9B8 /* Models */,
@@ -296,6 +307,7 @@
 				266F60B01D9589EC0099D9B8 /* ViewController.swift in Sources */,
 				266F60AE1D9589EC0099D9B8 /* AppDelegate.swift in Sources */,
 				2606BA9E1D9DB21A00B30B1F /* PageCell.swift in Sources */,
+				264A32251DA124550045AADE /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
