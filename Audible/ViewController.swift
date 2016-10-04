@@ -154,6 +154,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             }, completion: nil)
         
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        view.endEditing(true)
+    }
 
 
 }

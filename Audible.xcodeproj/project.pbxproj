@@ -18,6 +18,7 @@
 		266F60B81D9589EC0099D9B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266F60B61D9589EC0099D9B8 /* LaunchScreen.storyboard */; };
 		266F60C31D9589EC0099D9B8 /* AudibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266F60C21D9589EC0099D9B8 /* AudibleTests.swift */; };
 		266F60CE1D9589EC0099D9B8 /* AudibleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266F60CD1D9589EC0099D9B8 /* AudibleUITests.swift */; };
+		26BFD7EE1DA18D05000747A6 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFD7ED1DA18D05000747A6 /* TextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		266F60C91D9589EC0099D9B8 /* AudibleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudibleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		266F60CD1D9589EC0099D9B8 /* AudibleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudibleUITests.swift; sourceTree = "<group>"; };
 		266F60CF1D9589EC0099D9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26BFD7ED1DA18D05000747A6 /* TextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				264A32241DA124550045AADE /* ColorExtension.swift */,
+				26BFD7ED1DA18D05000747A6 /* TextFieldExtension.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				264A32221DA1104F0045AADE /* PageCellModel.swift in Sources */,
 				266F60B01D9589EC0099D9B8 /* ViewController.swift in Sources */,
 				266F60AE1D9589EC0099D9B8 /* AppDelegate.swift in Sources */,
+				26BFD7EE1DA18D05000747A6 /* TextFieldExtension.swift in Sources */,
 				2606BA9E1D9DB21A00B30B1F /* PageCell.swift in Sources */,
 				264A32251DA124550045AADE /* ColorExtension.swift in Sources */,
 				264A32271DA13A4F0045AADE /* LoginCell.swift in Sources */,
