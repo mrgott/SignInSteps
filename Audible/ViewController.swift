@@ -101,6 +101,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         nextButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
         nextButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
+        observeKeyboardNotification()
         
     }
 
@@ -158,7 +159,24 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         view.endEditing(true)
     }
-
+    
+    fileprivate func observeKeyboardNotification(){
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardShown), name: .UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardHide), name: .UIKeyboardWillHide, object: nil)
+    }
+    
+    func keyboardShown(){
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+            self.view.frame = CGRect(x: 0, y: -40, width: self.view.frame.width, height: self.view.frame.height)
+            }, completion: nil)
+    }
+    
+    func keyboardHide(){
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: { 
+            self.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+            }, completion: nil)
+        
+    }
 
 }
 
