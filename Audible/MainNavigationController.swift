@@ -17,7 +17,10 @@ class MainNavigationController: UINavigationController {
         view.backgroundColor = .white
         
         if isLoggedIn() {
-            print("Logged In")
+            let homeController = HomeViewController()
+            viewControllers = [homeController]
+        } else {
+            perform(#selector(showLoginController), with: nil, afterDelay: 0.01)
         }
         
         
@@ -26,6 +29,13 @@ class MainNavigationController: UINavigationController {
 
     fileprivate func isLoggedIn() -> Bool {
         return false
+    }
+    
+    func showLoginController(){
+        let loginController = LoginController()
+        present(loginController, animated: true) { 
+            //something to be done here
+        }
     }
     
     override func didReceiveMemoryWarning() {
