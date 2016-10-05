@@ -20,6 +20,7 @@
 		266F60CE1D9589EC0099D9B8 /* AudibleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266F60CD1D9589EC0099D9B8 /* AudibleUITests.swift */; };
 		269429381DA519BB00AF6C8F /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269429371DA519BB00AF6C8F /* MainNavigationController.swift */; };
 		2694293A1DA51A0600AF6C8F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269429391DA51A0600AF6C8F /* HomeViewController.swift */; };
+		2694293C1DA558AF00AF6C8F /* LoginControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694293B1DA558AF00AF6C8F /* LoginControllerDelegate.swift */; };
 		26BFD7EE1DA18D05000747A6 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFD7ED1DA18D05000747A6 /* TextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		266F60CF1D9589EC0099D9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		269429371DA519BB00AF6C8F /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		269429391DA51A0600AF6C8F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2694293B1DA558AF00AF6C8F /* LoginControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginControllerDelegate.swift; sourceTree = "<group>"; };
 		26BFD7ED1DA18D05000747A6 /* TextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				269429371DA519BB00AF6C8F /* MainNavigationController.swift */,
+				2694293B1DA558AF00AF6C8F /* LoginControllerDelegate.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				266F60B01D9589EC0099D9B8 /* LoginController.swift in Sources */,
 				269429381DA519BB00AF6C8F /* MainNavigationController.swift in Sources */,
 				266F60AE1D9589EC0099D9B8 /* AppDelegate.swift in Sources */,
+				2694293C1DA558AF00AF6C8F /* LoginControllerDelegate.swift in Sources */,
 				26BFD7EE1DA18D05000747A6 /* TextFieldExtension.swift in Sources */,
 				2694293A1DA51A0600AF6C8F /* HomeViewController.swift in Sources */,
 				2606BA9E1D9DB21A00B30B1F /* PageCell.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class LoginController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, LoginControllerDelegate {
     
     fileprivate let cellId = "cellId"
     fileprivate let loginCell = "loginCell"
@@ -120,6 +120,7 @@ class LoginController: UIViewController, UICollectionViewDataSource, UICollectio
         
         if indexPath.item == pages.count {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: loginCell, for: indexPath) as! LoginCell
+            cell.loginControllerDelegate = self
             
             return cell
         }
@@ -206,5 +207,16 @@ class LoginController: UIViewController, UICollectionViewDataSource, UICollectio
         nextButtonTopAnchor?.constant = -65
     }
 
+    func finishLoggingIn(){
+        
+        let rootViewController = UIApplication.shared.keyWindow?.rootViewController
+        guard let mainNavigationController = rootViewController as? MainNavigationController else { return }
+        
+        mainNavigationController.viewControllers = [HomeViewController()]
+        
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
 }
 

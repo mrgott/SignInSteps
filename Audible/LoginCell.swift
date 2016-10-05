@@ -50,12 +50,13 @@ class LoginCell: UICollectionViewCell {
         return passwordTextField
     }()
     
-    let loginButton: UIButton = {
+    lazy var loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .orange
         button.setTitle("Login", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(loginButtonClicked), for: .touchUpInside)
         
         return button
     }()
@@ -88,6 +89,12 @@ class LoginCell: UICollectionViewCell {
         loginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
     
+    }
+    
+    weak var loginControllerDelegate: LoginControllerDelegate?
+    
+    func loginButtonClicked(){
+        loginControllerDelegate?.finishLoggingIn()
     }
     
 }
